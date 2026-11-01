@@ -57,3 +57,13 @@ These are generated illustrative compositions with fictional sample content, not
 Earlier native-window screenshots and source captures remain in `metadata/creative` for provenance. A 20.27-second, 1920 × 1080 H.264 motion study is included for local review; it is a screenshot animation, not a recorded walkthrough, and was not uploaded as an App Store preview.
 
 An export mismatch initially gave JPEG files `.png` names, causing Apple processing errors. All affected exports and source captures were transcoded to actual PNG, verified by signature/format/dimensions, and the four failed listing assets were replaced. Corrected images rendered in Apple's gallery and remained after reload. The export manifest hashes and local artwork ZIP integrity also passed.
+
+## Version 1.0.1 (7) preparation, November 1, 2026
+
+Requested listing name: `Pluck: Copy any text you see`. Subtitle: `Copy text you can't highlight`.
+
+The selection hint now measures the existing text and centers its drawing rectangle inside the same black box. No new UI components or image resources were added. The archive executable is 73,184 bytes, compared with 73,248 for 1.0 (6); the full development-signed bundle is 142,867 bytes, compared with 142,929. These are archive measurements, not final App Store download sizes.
+
+Archive and export succeeded. Strict app signature verification and installer signature checks passed. All 18 OCR checks passed. Xcode reported upload succeeded for 1.0.1 (7). The native hint drawing was visually verified in an isolated running window using the actual SelectionView implementation (`work/hint-1.0.1.jpg`). Full live screen capture still encountered the macOS permission gate after restarting; the isolated rendering check does not establish capture permission or global shortcut behavior.
+
+New App Store version and requested listing text were saved in App Store Connect. Apple confirmed 1 Item Submitted, then Waiting for Review for 1.0.1 (7), November 1, 2026 at 8:25 AM CST. Submission ID: `73b31f4e-d363-4fa2-8f24-045374539780`. Review record: https://appstoreconnect.apple.com/apps/6823632660/distribution/reviewsubmissions/details/73b31f4e-d363-4fa2-8f24-045374539780. Manual release after approval remains selected. Confirmation: `work/submitted-1.0.1.jpg`.
