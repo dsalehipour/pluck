@@ -1,10 +1,10 @@
 {
-  "name": "Pluck: Copy Screen Text",
+  "name": "Pluck: Copy any text you see",
   "platform": "MAC_OS",
   "primaryLocale": "en-US",
   "sku": "pluck-macos",
   "bundleId": "com.darius.mote",
-  "subtitle": "Copy text from your screen",
+  "subtitle": "Copy text you can't highlight",
   "primaryCategory": "PRODUCTIVITY",
   "secondaryCategory": "UTILITIES",
   "price": "FREE",
@@ -18,5 +18,6 @@
   "reviewNotes": "Pluck is a native macOS menu-bar utility. Its main window appears on launch; it remains available from the menu bar after closing the window. No account or sign-in is required.\n\nScreen capture: press Command-Shift-2 or click Capture text. Grant Screen & System Audio Recording permission to Pluck in System Settings when macOS asks, then quit and reopen Pluck if macOS requires it. macOS may also show a ScreenCaptureKit confirmation; allow it to continue. Drag one rectangle around visible text and release the mouse. The recognized text is copied to the clipboard. Escape cancels. No audio is captured.\n\nImage import: click Open image and choose a PNG or JPEG containing text. Recognition uses Vision entirely on device. The sandbox grants read-only access to the user-selected image.\n\nThe latest recognized text and preferences persist only on the Mac. Privacy policy is available in the Pluck menu. If another copy of Pluck is running, quit it first to release the exclusive global shortcut.\n\nThis build supports Apple Silicon Macs only.\n\nScreenshot artwork: the four product images are AI-generated illustrative compositions with fictional website/app content showing screen-region selection and extracted clipboard text. The \"Copied text\" cards and connector arrows explain the result; they are not separate Pluck popup interfaces. Pluck operates through screen capture and local OCR, without integrations with the depicted apps.",
   "appPrivacy": "DATA_NOT_COLLECTED",
   "usesNonExemptEncryption": false,
-  "reviewContact": null
+  "reviewContact": null,
+  "whatsNew": "Improved alignment of the screen-selection instructions."
 }

@@ -76,7 +76,9 @@ static NSString *Recognize(VNImageRequestHandler *handler, BOOL fast, BOOL corre
     NSRect box = NSMakeRect(24, self.bounds.size.height-68, MIN(320, self.bounds.size.width-48), 44);
     [NSColor.blackColor setFill]; [[NSBezierPath bezierPathWithRoundedRect:box xRadius:10 yRadius:10] fill];
     NSString *hint = @"Drag around text · Escape cancels";
-    [hint drawInRect:NSInsetRect(box, 16, 10) withAttributes:@{NSFontAttributeName:[NSFont systemFontOfSize:16], NSForegroundColorAttributeName:NSColor.whiteColor}];
+    NSDictionary *attributes = @{NSFontAttributeName:[NSFont systemFontOfSize:16], NSForegroundColorAttributeName:NSColor.whiteColor};
+    NSSize size = [hint sizeWithAttributes:attributes];
+    [hint drawInRect:NSMakeRect(NSMidX(box)-size.width/2, NSMidY(box)-size.height/2, size.width, size.height) withAttributes:attributes];
 }
 - (void)mouseDown:(NSEvent *)event { [NSCursor.crosshairCursor set]; anchor = cursor = [self convertPoint:event.locationInWindow fromView:nil]; selecting = YES; self.needsDisplay = YES; }
 - (void)mouseDragged:(NSEvent *)event { [NSCursor.crosshairCursor set]; cursor = [self convertPoint:event.locationInWindow fromView:nil]; self.needsDisplay = YES; }
